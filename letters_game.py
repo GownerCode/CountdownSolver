@@ -1,6 +1,6 @@
 import random
 
-# random Letters function returns 9 random letters, like the show
+# random Letters function returns 9 random letters (might return only consonants or only vowels)
 def random_letters():
     return [chr(random.randint(97, 97 + 25)) for _ in range(9)]
 
@@ -48,5 +48,3 @@ def solve_puzzle(LETTERS, dict_ordered):
     for word in possible_words:
         pw_dict[word] = len(word)
     return pw_dict
-
-print(solve_puzzle(LETTERS, init_dict()))
