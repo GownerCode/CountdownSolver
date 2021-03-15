@@ -1,6 +1,4 @@
-LETTERS = tuple("tncaekira".lower())
 import random
-import kivy 
 
 # random Letters function returns 9 random letters, like the show
 def random_letters():
